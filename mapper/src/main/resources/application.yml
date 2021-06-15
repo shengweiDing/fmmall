@@ -2,7 +2,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/spring?zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong
+      url: jdbc:mysql://localhost:3306/fmmall2?zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong
       username: root
       password: root
 

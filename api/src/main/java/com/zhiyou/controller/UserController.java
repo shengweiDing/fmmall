@@ -3,6 +3,7 @@ package com.zhiyou.controller;
 import com.zhiyou.fmmall.pojo.User;
 import com.zhiyou.fmmall.service.UserService;
 import com.zhiyou.fmmall.vo.ResultVO;
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +16,7 @@ import javax.annotation.Resource;
  * @author Administrator
  */
 
+@Api(value = "用户管理" ,tags = "提供用户登录和注册接口")
 @Controller
 @ResponseBody
 @RequestMapping("user")
