@@ -11,7 +11,6 @@ import lombok.ToString;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class User {
     private Integer userId;
     private String userName;
