@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * @author Administrator
  */
-@Api
+@Api(value = "提供商品添加、修改、删除及查询的相关接口",tags = "商品管理")
 @Controller
 @RequestMapping("Goods")
 public class GoodsController {
