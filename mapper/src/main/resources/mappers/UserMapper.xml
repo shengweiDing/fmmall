@@ -5,17 +5,17 @@
 <mapper namespace="com.zhiyou.fmmall.mapper.UserMapper">
     <resultMap id="userMap" type="User">
         <id column="user_id" property="userId"></id>
-        <result column="user_name" property="userName"></result>
-        <result column="user_realname" property="userRealName"></result>
+        <result column="username" property="userName"></result>
+        <result column="realname" property="userRealName"></result>
         <result column="user_img" property="userImg"></result>
-        <result column="user_pwd" property="userPwd"></result>
+        <result column="password" property="userPwd"></result>
     </resultMap>
 
 
     <select id="queryUserByName" resultMap="userMap">
         select *
-        from user
-        where user_name = #{userName}
+        from users
+        where username = #{userName}
     </select>
 
 </mapper>       

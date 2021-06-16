@@ -40,7 +40,6 @@ public class UserController {
     }
 
     @ApiOperation("用户注册接口")
-    @ApiImplicitParam(name = "用户信息",required = true)
     @RequestMapping(value = "regist", method = RequestMethod.POST)
     public ResultVO regist(User user) {
 

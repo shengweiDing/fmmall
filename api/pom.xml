@@ -6,11 +6,11 @@
     <version>2.0.1-SNAPSHOT</version>
     <name>api</name>
     <description>Demo project for Spring Boot</description>
-   <parent>
-       <groupId>com.zhiyou</groupId>
-       <version>2.0.1-SNAPSHOT</version>
-       <artifactId>fmmall</artifactId>
-   </parent>
+    <parent>
+        <groupId>com.zhiyou</groupId>
+        <version>2.0.1-SNAPSHOT</version>
+        <artifactId>fmmall</artifactId>
+    </parent>
 
     <properties>
         <java.version>1.8</java.version>
@@ -19,7 +19,13 @@
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
     </properties>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/swagger-bootstrap-ui -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.6</version>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
         <dependency>
