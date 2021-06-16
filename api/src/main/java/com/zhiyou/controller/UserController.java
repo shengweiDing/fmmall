@@ -31,15 +31,16 @@ public class UserController {
 
     @RequestMapping(value = "login", method = RequestMethod.GET)
     @ApiOperation("用户登录接口")
+    @ApiImplicitParams({
+            @ApiImplicitParam(dataType = "String", name = "username", value = "用户登录账号", required = true),
+            @ApiImplicitParam(dataType = "String", name = "password", value = "用户登录密码", required = false, defaultValue = "111111")
+    })
     public ResultVO login(@RequestParam("username") String name, @RequestParam(value = "password", defaultValue = "111111") String pwd) {
         return service.checkLogin(name, pwd);
     }
 
     @ApiOperation("用户注册接口")
-    @ApiImplicitParams({
-            @ApiImplicitParam(dataType = "String", name = "username", value = "用户登录账号", required = true),
-            @ApiImplicitParam(dataType = "String", name = "password", value = "用户登录密码", required = false, defaultValue = "111111")
-    })
+    @ApiImplicitParam(defaultValue = "User",value = "需要注册的用户信息")
     @RequestMapping(value = "regist", method = RequestMethod.POST)
     public ResultVO regist(User user) {
 
